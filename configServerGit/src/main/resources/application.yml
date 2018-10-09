@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: configservergit
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://gitee.com/liweiwei0/config.git
+          search-paths: configclient
+server:
+  port: 1201

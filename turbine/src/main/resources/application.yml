@@ -1,0 +1,17 @@
+server:
+  port: 8889
+spring:
+  application:
+    name: turbine
+management:
+  server:
+    port: 8990
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1001/eureka
+turbine:
+  app-config: eurekaconsumerribbonhystrix
+  cluster-name-expression: "licluster"
+  combine-host-port: true
+
